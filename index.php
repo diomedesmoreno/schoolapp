@@ -55,7 +55,7 @@ date_default_timezone_set('America/Santo_Domingo');
  */
 	//define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
 switch($_SERVER["HTTP_HOST"]){
-	case "localhost":
+	case "localhost:8080":
 		define('ENVIRONMENT', 'development');
 		break;
 	default:
@@ -320,4 +320,5 @@ switch (ENVIRONMENT)
  *
  * And away we go...
  */
+// echo BASEPATH; die();
 require_once BASEPATH.'core/CodeIgniter.php';
